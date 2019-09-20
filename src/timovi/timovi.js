@@ -34,7 +34,7 @@ class Timovi extends React.Component {
     
     getTeams(){
         year =godina;
-         var url=`http://ergast.com/api/f1/${year}/constructorStandings.json`;
+         var url=`https://ergast.com/api/f1/${year}/constructorStandings.json`;
          
          $.get(url, (data)=>{
              if(data.MRData.StandingsTable.StandingsLists[0]!==undefined){

@@ -30,14 +30,14 @@ class Trke extends React.Component {
 
     getRaces(){
         year = godina;
-        var url=`http://ergast.com/api/f1/${year}/results/1.json` ;
+        var url=`https://ergast.com/api/f1/${year}/results/1.json` ;
         $.get(url, (data)=>{
             this.setState({races:data.MRData.RaceTable.Races});
         })
     }
 
     getDrivers() {
-        var url = `http://ergast.com/api/f1/${year}/driverStandings.json`;
+        var url = `https://ergast.com/api/f1/${year}/driverStandings.json`;
         $.get(url, (data) => {
             this.setState({ drivers: data.MRData.StandingsTable.StandingsLists[0].DriverStandings,
             isLoading:false });

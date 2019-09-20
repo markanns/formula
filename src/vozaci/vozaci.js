@@ -25,7 +25,7 @@ class Vozaci extends React.Component {
     }
     getDrivers() {
         godina= this.props.match.params.year;
-        var url = `http://ergast.com/api/f1/${godina}/driverStandings.json`;
+        var url = `https://ergast.com/api/f1/${godina}/driverStandings.json`;
         $.get(url, (data) => {
             this.setState({ drivers: data.MRData.StandingsTable.StandingsLists[0].DriverStandings,
             isLoading:false });
