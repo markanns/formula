@@ -1,0 +1,63 @@
+/* komponente */
+h2{
+    color: white;
+    padding: 2%;
+    font-family: 'Audiowide';
+}
+
+/* detalji vozaca */
+.mainDetalji{
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+.main{
+    height: 100%;
+}
+.vozac{
+    width:200px;
+}
+.zastavaIme{
+    display: flex;
+}
+.zastavaIme >img{
+    width:100px;
+    height:100px;
+}
+.OVozacu{
+    color: white;
+    background-color: #30323b;
+    height: 100%;
+}
+.info{
+    display: flex;
+}
+.biografija{
+    padding-left: 10px;
+}
+.biografija a{
+    color: white;
+}
+.biografija a:visited{
+    color: white;
+}
+.ime{
+    margin: 0px;
+}
+
+@media screen and (max-width:980px) {
+    .OVozacu{
+        width:10%;
+        height: 65%;    
+    }
+    .zastavaIme{
+        display: block;
+    }
+    .info{
+        display: none;
+    }
+    .zastavaIme>img{
+        width: 50px;
+        height: 50px;
+    }
+}

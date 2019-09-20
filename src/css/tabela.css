@@ -1,0 +1,36 @@
+th{
+    background-color: #ccc;
+    text-align: left;
+    color: #30323b;
+}
+table {
+    margin: 2%;
+    width: 90%;
+    border-radius: 1%;
+    overflow: hidden;
+}
+tbody{
+    background-color: white;
+}
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td a{
+    color: #30323b;
+    padding-left: 10px;
+}
+td a:visited{
+    color: #30323b;
+}
+.celija{
+    display: flex;
+    border: none;
+}
+.blank_row{   
+    background-color: #ccc;   
+}
+.vozaciDugme {
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5d6475;
+  }
+
+  
+.App{
+    display: flex; 
+    width: 100%;
+
+  }
+.home{
+    width:14%;
+    margin-right: 2%;
+    margin-bottom: -2%;
+}
+.header1{
+    background-color: #5d6475;
+    width:100%;
+    min-height: 10px;
+    overflow: hidden;
+}
+.ikonica{
+    width: 14%;
+}
+  
+
+.loderIkonica{
+    width: 10%;
+   position: absolute;
+   left: 50%;
+   top: 45%;
+    
+}
+
+.dugme{
+    margin: 0.5%;
+    width: 10%;
+    padding: 0.5%;
+    background-color: #30323b;
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+}
+
+@media screen and (max-width: 1280px){
+    
+    .ikonica{
+        display: none;
+    }
+}
