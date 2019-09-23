@@ -37,14 +37,14 @@ class DetaljiTima extends React.Component{
     var url = `https://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/results.json`;
    
     $.get(url, (data) => {
-        if(data.MRData.RaceTable.Races[0].Results.Driver!==undefined){
+        // if(data.MRData.RaceTable.Races[0].Results.Driver!==undefined){
             this.setState({
     team: data.MRData.RaceTable.Races,
     isLoading1: false
         });
-        }else{
-            this.getNotFound();
-        }
+        // }else{
+        //     this.getNotFound();
+        // }
     
      })
     }
