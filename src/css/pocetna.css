@@ -96,3 +96,13 @@ select option[disabled]:first-child { display: none; }
         margin-left: 5%;
     }
 }
+
+
+@media screen and (max-width:480px) {
+    .sadrzaj{
+        font-size: x-small;
+    }
+    .izbor{
+        font-size: x-small;
+    }
+}
