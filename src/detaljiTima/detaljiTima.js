@@ -34,24 +34,21 @@ class DetaljiTima extends React.Component{
 
     getTeam() {
      godina = this.props.match.params.year;
-    var url = `https://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/results.json`;
+    var url = `http://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/results.json`;
    
     $.get(url, (data) => {
-        // if(data.MRData.RaceTable.Races[0].Results.Driver!==undefined){
+        
             this.setState({
     team: data.MRData.RaceTable.Races,
     isLoading1: false
         });
-        // }else{
-        //     this.getNotFound();
-        // }
-    
+       
      })
     }
 
    getConstructor(){
     let godina = this.props.match.params.year;
-    var url = `https://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/constructorStandings.json`;
+    var url = `http://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/constructorStandings.json`;
     console.log(url);
     $.get(url, (data)=>{
         this.setState({
@@ -130,13 +127,12 @@ class DetaljiTima extends React.Component{
                                     let position='';
                                     let position1='';
                                     let points='';
-                                    if(info.Results[0]!==undefined&&info.Results[1]!==undefined){
-                                            let position = info.Results[0].position;
-                                    let position1 = info.Results[1].position;
-                                    let points = +info.Results[0].points + +info.Results[1].points;
+                                    if(info.Results[0]!==undefined && info.Results[1]!==undefined){
+                                        position = info.Results[0].position;
+                                        position1 = info.Results[1].position;
+                                        points = +info.Results[0].points + +info.Results[1].points;
                                     }
-                                
-                                    return (
+                                       return (
                                         <tr key={i}>
                                             <td width='50px'>{info.round}</td>
                                             <td  className='celija'>
@@ -172,9 +168,7 @@ class DetaljiTima extends React.Component{
                                             </td>
                                             <td className={'_'+position}>{position}</td>
                                             <td className={'_'+position1}>{position1}</td>
-                                            <td >{
-                                                points
-                                                }</td>
+                                            <td >{points}</td>
                                         </tr>
                                     )
                                 })
