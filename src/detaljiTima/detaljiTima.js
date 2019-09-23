@@ -107,7 +107,7 @@ class DetaljiTima extends React.Component{
                                     </div>
                                 </div>
                                 <div className='info'>
-                                    <div><p>Country:</p><p>Location:</p><p>Date:</p><p>FullReport:</p></div>
+                                    <div><p>Country:</p><p>Position:</p><p>Points:</p><p>History:</p></div>
                                     <div><p>{this.state.team[0].Results[0].Constructor.nationality}</p>
                                         <p >{this.state.team[0].Results[0].position}</p>
                                         <p>{this.state.constructor.points}</p>
