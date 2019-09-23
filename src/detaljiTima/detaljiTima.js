@@ -34,7 +34,7 @@ class DetaljiTima extends React.Component{
 
     getTeam() {
      godina = this.props.match.params.year;
-    var url = `http://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/results.json`;
+    var url = `https://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/results.json`;
    
     $.get(url, (data) => {
         
@@ -48,7 +48,7 @@ class DetaljiTima extends React.Component{
 
    getConstructor(){
     let godina = this.props.match.params.year;
-    var url = `http://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/constructorStandings.json`;
+    var url = `https://ergast.com/api/f1/${godina}/constructors/${this.props.match.params.id}/constructorStandings.json`;
     console.log(url);
     $.get(url, (data)=>{
         this.setState({
