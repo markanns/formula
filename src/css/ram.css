@@ -61,3 +61,39 @@ h2{
         height: 50px;
     }
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .mainDetalji{
+        display: block;
+    }
+    .info{
+        display: flex;
+        padding-left:10%;
+    }
+    .OVozacu{
+        width: 100%;
+        height: 23%;
+    }
+    .vozac{
+        display: flex;
+    }
+    
+   
+  }
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    .mainDetalji{
+        display: block;
+    }
+    .info{
+        display: flex;
+        padding-left:10%;
+    }
+    .OVozacu{
+        width: 100%;
+        height: 20%;
+    }
+    .vozac{
+        display: flex;
+    }
+  }

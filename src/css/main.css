@@ -52,3 +52,14 @@ body{
         display: none;
     }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+    .header1{
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header1{
+        display: none;
+    }
+}

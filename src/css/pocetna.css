@@ -96,7 +96,6 @@ select option[disabled]:first-child { display: none; }
         margin-left: 5%;
     }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
     .sadrzaj{
         margin-bottom: 10%;
@@ -106,8 +105,6 @@ select option[disabled]:first-child { display: none; }
     }
    
   }
-
-
 @media (min-width: 320px) and (max-width: 480px) {
     
     .izbor{
@@ -116,5 +113,4 @@ select option[disabled]:first-child { display: none; }
     .sadrzaj{
         font-size:x-small;
     }
-         
   }
