@@ -38,9 +38,9 @@ class Pocetna extends React.Component {
         return (
             <div className='pocetnaStrana'>
             <div className='slika'></div>
-            <div className='sadrzaj'><h1>Dobrodosli na F1 statistiku</h1></div> 
+            <div className='sadrzaj'><h1>Welcome to F1 Statistic</h1></div> 
             <div className='izbor'>
-                <h2>Izaberite sezonu</h2>
+                <h2>Chose season</h2>
                 <div>
                 <select className='empty' onChange={this.selektovano}>
                 <option value="" selected disabled>Please select</option>

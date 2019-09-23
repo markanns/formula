@@ -8,10 +8,22 @@ table {
     width: 90%;
     border-radius: 1%;
     overflow: hidden;
+
 }
+	
 tbody{
     background-color: white;
+   
 }
+
+table tr:nth-child(odd){
+    background-color: white;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(205, 205, 206);
+}		
+
 table, tr, td{
     border: 1px solid black;
     border-collapse: collapse;

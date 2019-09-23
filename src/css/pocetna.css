@@ -84,3 +84,15 @@ select option:first-child { color: grey; }
 select.empty { color: grey; }
 /* Hidden placeholder */
 select option[disabled]:first-child { display: none; }
+
+
+@media screen and (max-width:980px) {
+    .izbor{
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+    .sadrzaj{
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+}
