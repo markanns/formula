@@ -101,6 +101,9 @@ select option[disabled]:first-child { display: none; }
     .sadrzaj{
         margin-bottom: 10%;
     }
+    .izbor {
+        margin-top: 10%;
+    }
    
   }
 
