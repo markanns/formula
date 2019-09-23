@@ -124,12 +124,18 @@ class DetaljiTima extends React.Component{
                                 <tr>
                                     <th colSpan='5'>Formula1 {godina} Results</th>
                                 </tr>
-                                <tr><th>Round</th><th>Grand Prix</th><th>{this.state.team[0].Results[0].Driver.familyName}</th><th>{this.state.team[0].Results[1].Driver.familyName}</th><th>Points</th></tr>
+                                <tr><th>Round</th><th>Grand Prix</th><th>{this.state.team[0].Results[0]!==undefined?this.state.team[0].Results[0].Driver.familyName:'No data'}</th><th>{this.state.team[0].Results[1]!==undefined?this.state.team[0].Results[1].Driver.familyName:'No data'}</th><th>Points</th></tr>
                                 {this.state.team.map((teamStats, i) => {
                                     let info = teamStats;
-                                    let position = '_'+info.Results[0].position;
-                                    let position1 = '_'+info.Results[1].position;
+                                    let position='';
+                                    let position1='';
+                                    let points='';
+                                    if(info.Results[0]!==undefined&&info.Results[1]!==undefined){
+                                            let position = info.Results[0].position;
+                                    let position1 = info.Results[1].position;
                                     let points = +info.Results[0].points + +info.Results[1].points;
+                                    }
+                                
                                     return (
                                         <tr key={i}>
                                             <td width='50px'>{info.round}</td>
@@ -164,8 +170,8 @@ class DetaljiTima extends React.Component{
                                                 )}
                                                 {info.raceName}
                                             </td>
-                                            <td className={position}>{info.Results[0].position}</td>
-                                            <td className={position1}>{info.Results[1].position}</td>
+                                            <td className={'_'+position}>{position}</td>
+                                            <td className={'_'+position1}>{position1}</td>
                                             <td >{
                                                 points
                                                 }</td>
