@@ -92,7 +92,7 @@ class DetaljiVozaca extends React.Component {
                                 <div><p>Country:</p><p>Team:</p><p>Birth:</p><p>Biography:</p></div>
                                 <div><p>{this.state.driver[0].Results[0].Driver.nationality}</p>
                                     <p >{this.state.driver[0].Results[0].Constructor.name}</p>
-                                    <p>{this.state.driver[0].Results[0].Driver.dateOfBirth}</p>
+                                    <p className='datumRodjenja'>{this.state.driver[0].Results[0].Driver.dateOfBirth}</p>
                                     <p className='biografija'>< a href={this.state.driver[0].Results[0].Driver.url} target='_blank' rel="noopener noreferrer"><FaExternalLinkAlt /></a></p>
                                 </div>
                             </div>
