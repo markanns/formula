@@ -97,12 +97,21 @@ select option[disabled]:first-child { display: none; }
     }
 }
 
-
-@media screen and (max-width:480px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .sadrzaj{
-        font-size: x-small;
+        margin-bottom: 10%;
     }
+   
+  }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
     .izbor{
         font-size: x-small;
     }
-}
+    .sadrzaj{
+        font-size:x-small;
+    }
+         
+  }
