@@ -62,4 +62,7 @@ body{
     .header1{
         display: none;
     }
+    .App{
+        display: block;
+    }
 }

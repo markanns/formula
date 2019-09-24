@@ -75,5 +75,22 @@ ul{
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+   nav{
+       display: flex;
+       align-items: flex-end;
+       margin-bottom: -16px;
+   }
+   ul{
+       display: flex;
+       
+   }
+   .slika_logoa{
+       width: 50px;
+       margin-bottom: 12px;
+   }
+   .navigacija{
+       border: none;
+   }
 
-  }
+  
+}

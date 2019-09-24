@@ -1,8 +1,6 @@
 .pocetnaStrana{  
      height: 100%;
 }
-
-
 .slika{
     background-image: url('../img/formulaBlured.jpg');
     height: 100%;
@@ -109,8 +107,11 @@ select option[disabled]:first-child { display: none; }
     
     .izbor{
         font-size: x-small;
+        top:70%
     }
     .sadrzaj{
         font-size:x-small;
+        top: 30%;
     }
+
   }

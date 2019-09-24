@@ -1,11 +1,8 @@
-/* komponente */
 h2{
     color: white;
     padding: 2%;
     font-family: 'Audiowide';
 }
-
-/* detalji vozaca */
 .mainDetalji{
     display: flex;
     width: 100%;
@@ -80,20 +77,15 @@ h2{
     .datumRodjenja{
         width: 100px;
     }
-    
-   
   }
 @media (min-width: 320px) and (max-width: 480px) {
-    
     .mainDetalji{
         display: block;
     }
     .info{
         display: flex;
         padding-left:10%;
-    
     }
-  
     .datumRodjenja{
         width: 100px;
     }
@@ -105,4 +97,11 @@ h2{
         display: flex;
     }
 
+    .ram{
+        background-image: url('../img/formulaBlured.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
   }
