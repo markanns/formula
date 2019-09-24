@@ -20,7 +20,7 @@ class NotFound extends React.Component {
             <div className="header1">
                 <button className='dugme'><img src={home} alt='kucica' className='ikonica' onClick={this.backToHome} />F-1 Feeder</button>
             </div>
-            <h1>404 Not Found</h1>
+            <h1>Data empty</h1>
             </div>
     );
     }
