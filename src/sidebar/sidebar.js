@@ -63,7 +63,7 @@ class Sidebar extends React.Component {
                             </li>
                             <li>
                                 <NavLink to={'/trke/'+this.state.year} className='link' activeClassName="activeRoute">
-                                    <span className='navigacija'>
+                                    <span className='navigacija poslednjiSpan'>
                                         <img src={flag} alt='slika logoa' className='ikonice' />
                                         <h3>Races</h3>
                                     </span>

@@ -91,6 +91,7 @@ ul{
    .navigacija{
        border: none;
    }
-
-  
+.poslednjiSpan{
+    width: 65px;
+}
 }
