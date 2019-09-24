@@ -83,7 +83,7 @@ class Trke extends React.Component {
                     return (
                         
                         <tr key={i}>
-                        <td>{info.round}</td>
+                        <td width='45px' className='celija1'>{info.round}</td>
                         <td className='celija'>
                         {this.state.flags.map((zastava,i) => {
                             let skracenica = zastava.alpha_2_code;

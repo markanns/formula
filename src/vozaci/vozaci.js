@@ -65,7 +65,7 @@ class Vozaci extends React.Component {
                             let info = driverStats;
                             return (
                                 <tr key={i}>
-                                    <td width='50px'>{info.position}</td>
+                                    <td width='45px' className='celija1'>{info.position}</td>
                                     <td className='celija'>
                                     {this.state.flags.map((zastava,i)=>{
                                         let skracenica = zastava.alpha_2_code;

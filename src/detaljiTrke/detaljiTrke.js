@@ -173,7 +173,7 @@ class DetaljiTrke extends React.Component {
                                 let vreme = time.sort();
                                 return (
                                     <tr key={i}>
-                                        <td>{info.position}</td>
+                                        <td className='celija1'>{info.position}</td>
                                         <td className='celija'>{this.state.flags.map((zastava,i) => {
                                             let skracenica = zastava.alpha_2_code;
                                             if (info.Driver.nationality == zastava.nationality) {
@@ -230,7 +230,7 @@ class DetaljiTrke extends React.Component {
                                
                                 return (
                                     <tr key={i}>
-                                        <td>{info.position}</td>
+                                        <td className='celija1'>{info.position}</td>
                                         <td className='celija'>
                                             {this.state.flags.map((zastava,i) => {
                                                 let skracenica = zastava.alpha_2_code;

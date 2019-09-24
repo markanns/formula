@@ -83,7 +83,7 @@ class Timovi extends React.Component {
                     let tim = teamStats;
                     return ( 
                         <tr key={i}>
-                        <td  width='50px'>{tim.position}</td>
+                        <td  width='45px' className='celija1'>{tim.position}</td>
                         <td className='celija'>
                         {this.state.flags.map((zastava,i)=>{
                                         let skracenica = zastava.alpha_2_code;
