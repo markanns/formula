@@ -111,6 +111,12 @@ class Trke extends React.Component {
                                     return <Flag country="US" key={i}/>
                                 }
                             }
+                            if (info.Circuit.Location.country === "Russia") {
+                                if (zastava.en_short_name === "Russian Federation") {
+                                    return <Flag country="RU" key={i}/>
+                                }
+                            }
+
                         }
                         )}
                         < button className='vozaciDugme' type='button' onClick={this.onClickDetailsOfRequest} data-itemid={info.round}>{info.raceName}</button></td>

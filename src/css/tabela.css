@@ -46,3 +46,11 @@ td a:visited{
     background-color: transparent;
     border: none;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    table{
+        margin: 10px auto;
+    }
+
+  }

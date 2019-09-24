@@ -87,9 +87,25 @@ class Timovi extends React.Component {
                         <td className='celija'>
                         {this.state.flags.map((zastava,i)=>{
                                         let skracenica = zastava.alpha_2_code;
+
+                                         if(tim.Constructor.nationality === "American"){
+                                            if(zastava.en_short_name==='United States of America'){
+                                                return <Flag country = "US" key={i}/>
+                                            }
+                                        }    
+                                            if(tim.Constructor.nationality==="American"){
+                                            return false;
+                                        }else{
+                                             if(tim.Constructor.nationality===zastava.nationality){
+                                                return <Flag country={skracenica} key={i}/> 
+                                        }
+                                        }
+
+
                                         if(tim.Constructor.nationality===zastava.nationality){
                                             return <Flag country={skracenica} key={i}/>
                                         }
+
                                         if(tim.Constructor.nationality==="Dutch"){
                                             if(zastava.nationality==='Dutch, Netherlandic'){
                                                 return <Flag country = "NL" key={i}/>
