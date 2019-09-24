@@ -52,5 +52,8 @@ td a:visited{
     table{
         margin: 10px auto;
     }
+    .celija{
+        width: 90px;
+    }
 
   }

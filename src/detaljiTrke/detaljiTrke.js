@@ -107,8 +107,8 @@ class DetaljiTrke extends React.Component {
 
 
                 <div className='mainDetalji'>
-                    <div className='OVozacu'>
-                        <div className='vozac'>
+                    <div className='OTrci'>
+                        <div className='trka'>
                             <div className='zastavaIme'>
                                 {this.state.flags.map((zastava,i) => {
                                     let skracenica = zastava.alpha_2_code;

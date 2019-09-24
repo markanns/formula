@@ -140,6 +140,11 @@ class DetaljiVozaca extends React.Component {
                                                         return <Flag country="US" key={i}/>
                                                     }
                                                 }
+                                                if (info.Circuit.Location.country === "Russia") {
+                                                    if (zastava.en_short_name === "Russian Federation") {
+                                                        return <Flag country="RU" key={i}/>
+                                                    }
+                                                }
                                             }
                                             )}
                                             {info.raceName}
